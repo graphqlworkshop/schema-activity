@@ -1,0 +1,67 @@
+scalar DateTime
+
+type Customer {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  address: Address
+  email: String!
+  phoneNumber: String!
+  vip: Boolean
+  room: Room
+}
+
+type Address {
+  street1: String
+  street2: String
+  city: String
+  state: String
+  zip: Int
+}
+
+type Room {
+  id: ID!
+  number: Int!
+  clean: Boolean!
+  vacant: RoomStatus!
+  category: RoomCategory!
+  currentCustomer: Customer
+}
+
+enum RoomStatus {
+  OCCUPIED
+  VACANT
+}
+
+enum RoomCategory {
+  SINGLE
+  DOUBLE
+  KING
+  SUITE
+}
+
+type CheckInPayload {
+  room: Room
+  customer: Customer
+  checkInTime: DateTime
+}
+
+type CheckOutPayload {
+  room: Room
+  customer: Customer
+  checkOutTime: DateTime
+}
+
+type Query {
+  totalRooms(status: RoomStatus): Int
+  allRooms(status: RoomStatus): [Room!]!
+  allCustomers: [Customer!]!
+  currentCustomers: [Customer!]!
+  roomByNumber(number: Int): Room!
+  customerById(id: ID!): Customer!
+}
+
+type Mutation {
+  checkIn(number: Int): CheckInPayload
+  checkOut(number: Int): CheckOutPayload
+}
