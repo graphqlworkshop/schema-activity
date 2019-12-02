@@ -1,7 +1,31 @@
 # Schema Activity
 
-This repository contains some sample schemas for the schema activity.
+Create a schema for the data that's found in the **data** folder in this repository.
 
-- [Hotel App](https://github.com/graphqlworkshop/schema-activity/blob/master/hotel.graphql)
-- [Coffee Shop App](https://github.com/graphqlworkshop/schema-activity/blob/master/coffee.graphql)
-- [Music App](https://github.com/graphqlworkshop/schema-activity/blob/master/music.graphql)
+## Getting Started
+
+1. Clone the repo
+
+```
+git clone https://github.com/graphqlworkshop/schema-activity
+```
+
+2. Install the dependencies
+
+```
+cd schema-activity
+npm install
+```
+
+3. Start the server
+
+```
+npm start
+```
+
+4. Open localhost:4000 to see the Playground.
+
+### Hints
+
+- Create the schema in the **typeDefs.graphql** file
+- Use the data from the **data** folder

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rc5HXuXIb",
+    "name": "Beyonce",
+    "age": 38,
+    "country": "USA",
+    "currentlyPerforming": true,
+    "genre": "POP"
+  },
+  {
+    "id": "gXMuonvEqD",
+    "name": "Enya",
+    "age": 58,
+    "country": "Ireland",
+    "currentlyPerforming": false,
+    "genre": "NEWAGE"
+  }
+]

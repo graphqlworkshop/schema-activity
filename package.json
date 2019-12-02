@@ -1,0 +1,24 @@
+{
+  "name": "schema-activity",
+  "version": "1.0.0",
+  "description": "This repository contains some sample schemas for the schema activity.",
+  "scripts": {
+    "start": "nodemon ./src/index.js -e graphql,js,json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphqlworkshop/schema-activity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graphqlworkshop/schema-activity/issues"
+  },
+  "homepage": "https://github.com/graphqlworkshop/schema-activity#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.12",
+    "graphql": "^14.5.8",
+    "nodemon": "^2.0.1"
+  }
+}
