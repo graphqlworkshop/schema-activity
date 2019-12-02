@@ -1,3 +1,42 @@
+type Performer {
+  id: ID!
+  name: String!
+  age: Int!
+  country: String!
+  currentlyPerforming: Boolean!
+  genre: Genre!
+  songs: [Song!]!
+}
+
+type Song {
+  id: ID!
+  title: String!
+  numberOne: Boolean!
+  rating: Int!
+  performer: [Performer]
+}
+
+enum Genre {
+  POP
+  NEWAGE
+  ROCK
+}
+
+input AddSongInput {
+  id: ID!
+  title: String!
+  numberOne: Boolean
+  rating: Int
+}
+
 type Query {
-  hello: String!
+  allSongs: [Song!]!
+  songByTitle(title: String!): Song!
+  allPerformers: [Performer!]!
+  performerByName(name: String!): Performer!
+}
+
+type Mutation {
+  addSong(input: AddSongInput!): Song!
+  removeSong(id: ID!): Song!
 }
