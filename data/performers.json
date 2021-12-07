@@ -2,7 +2,7 @@
   {
     "id": "rc5HXuXIb",
     "name": "Beyonce",
-    "age": 38,
+    "age": 40,
     "country": "USA",
     "currentlyPerforming": true,
     "genre": "POP"
@@ -10,7 +10,7 @@
   {
     "id": "gXMuonvEqD",
     "name": "Enya",
-    "age": 58,
+    "age": 60,
     "country": "Ireland",
     "currentlyPerforming": false,
     "genre": "NEWAGE"
